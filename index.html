@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>DatNguyen</title>
+    <meta http-equiv="refresh" content="6; url=https://google.com">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Built with Themeforest/Impixels" />
     <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
@@ -124,9 +125,32 @@
                       <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="title-block">
                           <h2>Dat Nguyen</h2>
-                          <div class="owl-carousel text-rotation">                                    
+                          	<script>
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? + seconds : seconds;
+
+        display.textContent = seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+</script>
                             <div class="item">
-                              <div class="sp-subtitle">Chuyển hướng sau 5 giây</div>
+                              <div class="sp-subtitle">Chuyển hướng sau <span id="time">5</span> giây</div>
                             </div>
                             </div>
                           </div>
